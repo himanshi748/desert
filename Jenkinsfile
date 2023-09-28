@@ -9,17 +9,17 @@ pipeline {
         }
         stage('Test-One') {
             steps {
-                echo 'Testing-One..'
+                echo 'Testing-One-1..'
             }
         }
          stage('Test-Two') {
             steps {
-                echo 'Testing-Two..'
+                echo 'Testing-Two-2..'
             }
         }
          stage('Test-Three') {
             steps {
-                echo 'Testing-Three..'
+                echo 'Testing-Three-3..'
             }
         }
         stage('Deploy') {

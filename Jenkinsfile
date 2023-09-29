@@ -31,11 +31,6 @@ pipeline{
             }
         }
 
-        stage('Check env'){
-            steps {
-                sh "printenv"
-            }
-        }
         stage('Post to New Relic') {
             steps{
                 script {

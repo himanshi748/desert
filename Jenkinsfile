@@ -1,8 +1,8 @@
 pipeline{
     agent any
-    // environment{
-    //     entityGuid = 'MzYyNzM0NXxFWFR8U0VSVklDRXwtMjcxMTk0NzAyOTI0NzA1MTA2Mw'
-    // }
+    environment{
+        entityGuid = 'MzYyNzM0NXxFWFR8U0VSVklDRXwtMjcxMTk0NzAyOTI0NzA1MTA2Mw'
+    }
 
     stages {
         stage('Build') {

@@ -34,7 +34,7 @@ pipeline{
         stage('Post to New Relic') {
             steps{
                 script {
-                   step([$class: 'NewRelicDeploymentNotifier', notifications: [[apiKey: 'ef8d78e7-e99d-4c65-9866-ae8bf3cb8aa3', applicationId: '', changelog: '', commit: '', deeplink: 'http://localhost:8080/job/Newrelic-two/', deploymentId: '', deploymentType: 'BASIC', description: 'newrelic details', entityGuid: 'MzYyNzM0NXxFWFR8U0VSVklDRXwtMjcxMTk0NzAyOTI0NzA1MTA2Mw', european: true, groupId: '', revision: '9ec106dcea75404f9a0b24dd0165167ad355f8ed', timestamp: '', user: 'himanshi.satpute@cloudeq.com', version: '1']]])
+                  step([$class: 'NewRelicDeploymentNotifier', notifications: [[apiKey: 'NRAK-OTDFMH5G2LAZE5VWOZ0WRBJ5TMA', applicationId: '', changelog: 'test log', commit: 'added multiple test number', deeplink: 'jinnii.com/path', deploymentId: 'e7fd4778-a66d-4b98-b1a9-66e91757146b', deploymentType: 'BLUE_GREEN', description: 'Testing Tracker', entityGuid: "${entityGuid}", european: false, groupId: '78641', revision: 'Revision-one', timestamp: '1695970185769', user: 'Himanshi Satpute', version: '1']]])
                 }
             }
         }

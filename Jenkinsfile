@@ -34,7 +34,7 @@ pipeline{
         stage('Post to New Relic') {
             steps{
                 script {
-                  step([$class: 'NewRelicDeploymentNotifier', notifications: [[apiKey: 'fd356dcf253321d72b15444daa873665fb1bNRAL', applicationId: '', changelog: 'test log', commit: 'added multiple test number', deeplink: 'jinnii.com/path', deploymentId: 'e7fd4778-a66d-4b98-b1a9-66e91757146b', deploymentType: 'BLUE_GREEN', description: 'Testing Tracker', entityGuid: 'MzYyNzM0NXxFWFR8U0VSVklDRXwtMjcxMTk0NzAyOTI0NzA1MTA2Mw', european: false, groupId: '78641', revision: 'Revision-one', timestamp: '1695970185769', user: 'Himanshi Satpute', version: '1']]])
+                  step([$class: 'NewRelicDeploymentNotifier', notifications: [[apiKey: '${OTEL}', applicationId: '', changelog: 'test log', commit: 'added multiple test number', deeplink: 'jinnii.com/path', deploymentId: 'e7fd4778-a66d-4b98-b1a9-66e91757146b', deploymentType: 'BLUE_GREEN', description: 'Testing Tracker', entityGuid: 'MzYyNzM0NXxFWFR8U0VSVklDRXwtMjcxMTk0NzAyOTI0NzA1MTA2Mw', european: false, groupId: '78641', revision: 'Revision-one', timestamp: '1695970185769', user: 'Himanshi Satpute', version: '1']]])
                 }
             }
         }
